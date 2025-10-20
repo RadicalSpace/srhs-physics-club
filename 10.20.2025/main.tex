@@ -1,0 +1,40 @@
+\documentclass{exam}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\def\myhrule{\vspace*{0.05in}\lower1ex\null\vadjust{\hrule}}
+
+\pagestyle{head}
+\header{\textit{\large Scripps Ranch High Physics Club}}{}{\thepage}
+\firstpageheader{\textit{\large Scripps Ranch High Physics Club\myhrule}}{}{\large October 20, 2025 \myhrule}
+\begin{document}
+    \vspace*{-25px}
+    \begin{center}
+        \huge \textbf{RLC Circuits and Laplace Transforms Problem Set + Notes}
+    \end{center}
+    \vspace*{0.05in}
+    
+    \begin{questions}
+        \large
+        \question Find the Laplace transforms of the given functions
+        \begin{parts}
+            \part $f(t)=(2t+1)(t-5)$
+            \part $g(t)=4t\cos(t)\sin(t)$
+            \part $h(t)=\frac{t^2+2t}{\sqrt{t}}$
+            \part $a(t)=t^22^t+2$
+            \part $b(t)=\ddot{x}(t)+8\dot{x}(t)+15x(t)$
+        \end{parts}
+        \question Show that the laplace transform of $1$ is $\frac{1}{s}$ using the derivative rule for laplace transforms 
+        \question Use a Laplace transform to solve the following ODEs
+        \begin{parts}
+            \part $y'+5y=3\cos(2t) \qquad y(0)=2$
+            \part $3y'-14y=\sqrt{t} \qquad y(0)=1$
+            \part $y''+8y'+15=0 \qquad y(0)=1 \quad y'(0)=0$
+            \part $2y''+7y'=2t\cos(t)\sin(t) \qquad y(0)=0 \quad y'(0)=0$
+        \end{parts} 
+        \question A simple single loop circuit is constructed by wiring a $9V$ battery, a $3\Omega$ resistor, a $1H$ inductor, and a $2F$ capacitor, all wired in series. Find the current in the circuit as a function of time given that $I_0=1A$ and $I_0'=0\frac{A}{s}$. Assume wire resistivity is negligible and the circuit exhibits Ohmic behavior
+        \vspace{4in}
+        \question A potentiometer is a type of resistor whose resistance can be changed. A simple loop circuit is constructed by wiring a potentiometer, a $3H$ inductor, and a $1F$ capacitor, all in series. A programmer hooks up a digital device to the potentiometer that adjusts the resistance of the potentiometer according to a function $R(t)$. Given that $I_0=10mA$ and $I_0'=0\frac{A}{s}$, what must the prorammer program $R(t)$ to be if he wants to keep the current in the circuit at a constant $10mA$? Assume wire resistivity is negligible and the circuit exhibits Ohmic behavior
+        \vspace{2in}
+        \question An AC power supply is similar to a battery, except its voltage changes according to a sinusoidal function. What would the current in the circuit in problem \#3 be if the $9V$ battery were replaced instead with an AC power supply whose voltage was described by the function $V=9\sin(2\pi t)$? Assume the same initial conditions, that wire resistivity is negligible and the circuit exhibits Ohmic behavior
+    \end{questions}
+\end{document}
